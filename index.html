@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mina, in focus — a Colorado College Block Plan supplement</title>
+  <meta name="description" content="Mina Saied Attia Rizk's answer to Colorado College's Block Plan supplement: one question, three and a half weeks, and a sole-authored paper now in second-round review at the Journal of Computational Neuroscience.">
+  <meta name="theme-color" content="#F6F0E4">
+  <meta property="og:title" content="Mina, in focus — a Block Plan supplement">
+  <meta property="og:description" content="One question. 3.5 weeks. All of me. A Colorado College Block Plan supplement, answered in public.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the good part</a>
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" id="cursor" aria-hidden="true">
+    <span class="cursor-dot"></span>
+    <span class="cursor-ring"><span class="cursor-label" id="cursor-label"></span></span>
+  </div>
+
+  <div class="focus-overlay" id="focus-overlay" aria-hidden="true">
+    <div class="focus-lens" id="focus-lens"></div>
+    <div class="focus-hint">focus mode <span>·</span> esc to exit</div>
+  </div>
+
+  <div class="signal-hud" id="signal-hud" aria-hidden="true">
+    <span class="hud-pulse"></span>
+    <span class="hud-word">scroll</span>
+    <span class="hud-bar"><i id="hud-fill"></i></span>
+    <span class="hud-num" id="hud-num">18%</span>
+  </div>
+
+  <header class="site-nav" id="site-nav">
+    <a class="brand" href="#top" aria-label="Mina, back to top">
+      <span class="brand-mark">M<span>.</span></span>
+      <span class="brand-text">mina, in focus</span>
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#answer">the answer</a>
+      <a href="#question">the question</a>
+      <a href="#noise">the noise</a>
+      <a href="#builds">the workbench</a>
+      <a href="#garden">the garden</a>
+      <a href="#thanks">the thank-yous</a>
+      <a href="#words">the words</a>
+      <a href="#contact">say hi</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn sound-toggle" id="sound-toggle" type="button" aria-pressed="false" aria-label="Turn sound on" data-cursor="listen">
+        <svg class="icon icon-sound-off" aria-hidden="true"><use href="#i-sound-off"></use></svg>
+        <svg class="icon icon-sound-on" aria-hidden="true"><use href="#i-sound-on"></use></svg>
+        <span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+      </button>
+      <button class="icon-btn theme-toggle" id="thursday-toggle" type="button" aria-pressed="false" aria-label="Toggle Thursday 12h sleep mode" data-cursor="thursday mode">
+        <svg class="icon" aria-hidden="true"><use href="#i-moon"></use></svg>
+      </button>
+      <button class="focus-toggle" id="focus-toggle" type="button" aria-pressed="false" data-cursor="look closer">
+        <svg class="icon" aria-hidden="true"><use href="#i-lens"></use></svg>
+        <span>focus</span>
+      </button>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu" data-cursor="menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu-top">
+      <span class="mono">menu / 09</span>
+      <button class="menu-close" id="menu-close" type="button" aria-label="Close menu">close <span>×</span></button>
+    </div>
+    <nav class="mobile-links" aria-label="Mobile">
+      <a href="#answer"><span>00</span> the answer</a>
+      <a href="#question"><span>01</span> the question</a>
+      <a href="#noise"><span>02</span> the noise</a>
+      <a href="#builds"><span>03</span> the workbench</a>
+      <a href="#garden"><span>04</span> the garden</a>
+      <a href="#thanks"><span>05</span> the thank-yous</a>
+      <a href="#words"><span>06</span> the words</a>
+      <a href="#receipt"><span>07</span> the fine print</a>
+      <a href="#contact"><span>08</span> say hi</a>
+    </nav>
+    <div class="mobile-menu-foot">
+      <a href="mailto:minasaied2024@gmail.com">minasaied2024@gmail.com</a>
+      <span>Cairo, Egypt</span>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- ─────────────────────────── HERO ─────────────────────────── -->
+    <section class="hero" id="top">
+      <canvas class="hero-canvas" id="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero-glow hero-glow-a" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-b" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+
+      <div class="hero-inner container">
+        <div class="hero-copy">
+          <p class="hero-kicker reveal"><span class="kicker-dot"></span> Colorado College · Block Plan supplement · Cairo, Egypt</p>
+          <h1 class="hero-title" aria-label="Mina.">
+            <span class="hero-title-line">Mina<span class="hero-dot">.</span></span>
+            <span class="hero-title-sub">in focus</span>
+          </h1>
+          <p class="hero-tagline">One question. <em>3.5 weeks.</em> All of me.</p>
+          <p class="hero-lede">In eleventh-grade biology, I asked how the brain knows what to ignore. Then I followed that question until it became a sole-authored paper, now in second-round review at the Journal of Computational Neuroscience.</p>
+          <div class="hero-actions">
+            <a class="btn btn-coral magnetic" href="#answer" data-cursor="read">
+              read the answer
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow-down"></use></svg>
+            </a>
+            <a class="btn btn-ghost magnetic" href="#question" data-cursor="scroll">
+              the long version
+              <svg class="icon" aria-hidden="true"><use href="#i-book"></use></svg>
+            </a>
+          </div>
+          <div class="hero-status">
+            <span class="status-dot"></span>
+            <span>New Cairo STEM School · Class of 2027 · currently: second-round peer review · <em>Journal of Computational Neuroscience</em></span>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="focus-dial" id="focus-dial">
+            <div class="dial-sheen"></div>
+            <div class="dial-ring dial-ring-a"></div>
+            <div class="dial-ring dial-ring-b"></div>
+            <div class="dial-ring dial-ring-c"></div>
+            <div class="dial-core">
+              <span class="dial-core-word">focus</span>
+              <span class="dial-core-dot"></span>
+            </div>
+            <button class="orbit-badge badge-candy" type="button" style="--x: 12%; --y: 18%; --d: 0s" data-tip="candy on day one" data-badge="candy" data-cursor="taste" aria-label="Candy on day one">
+              <svg class="icon"><use href="#i-candy"></use></svg>
+            </button>
+            <button class="orbit-badge badge-neuron" type="button" style="--x: 82%; --y: 8%; --d: .7s" data-tip="one sideways question" data-badge="neuron" data-cursor="spark" aria-label="One sideways question">
+              <svg class="icon"><use href="#i-neuron"></use></svg>
+            </button>
+            <button class="orbit-badge badge-bridge" type="button" style="--x: 92%; --y: 56%; --d: 1.4s" data-tip="the bridge that held" data-badge="bridge" data-cursor="test load" aria-label="The bridge that held">
+              <svg class="icon"><use href="#i-bridge"></use></svg>
+            </button>
+            <button class="orbit-badge badge-moon" type="button" style="--x: 70%; --y: 90%; --d: 2.1s" data-tip="sleep on Thursdays" data-badge="moon" data-cursor="thursday" aria-label="Sleep on Thursdays">
+              <svg class="icon"><use href="#i-moon"></use></svg>
+            </button>
+            <button class="orbit-badge badge-pen" type="button" style="--x: 18%; --y: 82%; --d: 2.8s" data-tip="poems, after hours" data-badge="pen" data-cursor="poems" aria-label="Poems, after hours">
+              <svg class="icon"><use href="#i-pen"></use></svg>
+            </button>
+            <button class="orbit-badge badge-banana" type="button" style="--x: 2%; --y: 52%; --d: 3.5s" data-tip="banana stems → plastic" data-badge="banana" data-cursor="peel" aria-label="Banana stems into plastic">
+              <svg class="icon"><use href="#i-banana"></use></svg>
+            </button>
+            <span class="dial-sticker">one question<br>at a time</span>
+            <span class="dial-caption">est. 2024 · still curious</span>
+          </div>
+        </div>
+
+        <div class="hero-stickers" aria-label="A few numbers from one question">
+          <div class="sticker sticker-a draggable" tabindex="0" role="img" aria-label="One question, the one I couldn't put down" data-cursor="drag">
+            <span class="sticker-num">1<small>question</small></span>
+            <span class="sticker-label">the one I couldn't put down</span>
+          </div>
+          <div class="sticker sticker-b draggable" tabindex="0" role="img" aria-label="Three and a half weeks, one question, all of me" data-cursor="drag">
+            <span class="sticker-num">3.5<small>weeks</small></span>
+            <span class="sticker-label">one question, all of me</span>
+          </div>
+          <div class="sticker sticker-c draggable" tabindex="0" role="img" aria-label="Infinite drafts, rebuilt more times than I can count" data-cursor="drag">
+            <span class="sticker-num">∞<small>drafts</small></span>
+            <span class="sticker-label">rebuilt more times than I can count</span>
+          </div>
+          <div class="sticker sticker-d draggable" tabindex="0" role="img" aria-label="Second-round peer review at the Journal of Computational Neuroscience" data-cursor="drag">
+            <span class="sticker-num">2nd<small>round</small></span>
+            <span class="sticker-label">peer review · J. Comput. Neurosci.</span>
+          </div>
+          <button class="sticker-reset" id="sticker-reset" type="button" aria-label="Tidy the stickers" data-cursor="tidy">tidy up <span>↺</span></button>
+        </div>
+      </div>
+
+      <div class="scroll-cue" aria-hidden="true">
+        <span class="mono">scroll to focus</span>
+        <span class="scroll-line"><i></i></span>
+      </div>
+
+      <div class="hero-marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>one question</span><i>✦</i><span>3.5 weeks</span><i>✦</i><span>ephaptic crosstalk</span><i>✦</i><span>closed-loop model</span><i>✦</i><span>∞ drafts</span><i>✦</i><span>second-round review</span><i>✦</i><span>still curious</span><i>✦</i><span>Cairo</span><i>✦</i>
+          <span>one question</span><i>✦</i><span>3.5 weeks</span><i>✦</i><span>ephaptic crosstalk</span><i>✦</i><span>closed-loop model</span><i>✦</i><span>∞ drafts</span><i>✦</i><span>second-round review</span><i>✦</i><span>still curious</span><i>✦</i><span>Cairo</span><i>✦</i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────── ANSWER ─────────────────────────── -->
+    <section class="section answer" id="answer" aria-labelledby="answer-heading">
+      <svg class="wave answer-wave-top" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0,0 H1440 V34 C1200,76 960,6 720,32 C480,58 240,10 0,44 Z" fill="#F6F0E4"/></svg>
+      <div class="container">
+        <div class="section-head answer-head">
+          <p class="eyebrow reveal"><span class="eyebrow-dot"></span>00 — the answer</p>
+          <h2 class="display reveal" id="answer-heading">The answer,<br>in <em class="marker marker-marigold">one page.</em></h2>
+          <p class="lede reveal">The short version, for the people reading with a checklist. The rest of this site is the long one.</p>
+        </div>
+
+        <div class="answer-grid">
+          <aside class="answer-prompt reveal" aria-label="The supplement prompt">
+            <p class="mono answer-label">the prompt</p>
+            <blockquote>One of the benefits of Colorado College’s Block Plan is the opportunity to immerse yourself fully in a single subject for 3.5 weeks. We see this as the luxury of focus — the joy and value of directing your full attention to one thing. Tell us about a time when you experienced this kind of deep focus in an academic or extracurricular setting. What were you doing and how did it turn out?</blockquote>
+            <div class="answer-prompt-foot">
+              <span class="mono">3.5 weeks</span>
+              <span class="mono">one question</span>
+              <span class="mono">all of me</span>
+            </div>
+          </aside>
+
+          <article class="answer-sheet reveal" id="answer-sheet">
+            <div class="answer-sheet-top">
+              <span class="mono">Mina Saied Attia Rizk · Cairo, Egypt</span>
+              <span class="mono">Colorado College · Block Plan supplement</span>
+            </div>
+            <div class="answer-sheet-meta">
+              <span class="mono meta-chip">⏱ ~1.5 min read</span>
+              <span class="mono meta-chip">246 words</span>
+              <span class="mono meta-chip meta-hint">💡 hover underlined phrases</span>
+              <button class="meta-copy-btn" id="copy-essay-btn-top" type="button" data-cursor="copy">copy essay 📋</button>
+            </div>
+            <h3 class="answer-title">One question,<br>all of me.</h3>
+            <p>Last year, in eleventh-grade biology, the class was learning how a nerve fires. I asked the opposite question: with so much activity in the body, <span class="essay-annotation" tabindex="0" data-note="My biology teacher, Rahma Ahmed: 'We spent half the class going back and forth before we could even agree on an answer.'">how does the brain know what to ignore?</span></p>
+            <p>I couldn't put it down. For three and a half weeks, I lived inside it — reading until I understood the noise, building a <span class="essay-annotation" tabindex="0" data-note="Coupled differential equations in Python simulating adjacent unmyelinated axons. Radial compression forces voltage from touch (Aβ) into pain (C).">closed-loop core-conductor model of ephaptic crosstalk</span>, testing how space and time sum the interference when a nerve is compressed. I rebuilt the model more times than I can count. Everything else went quiet.</p>
+            <p>The result was a sole-authored paper now in <span class="essay-annotation" tabindex="0" data-note="Springer Nature. 10+ revisions, reviewed alongside faculty. When reviewer 2 asked for minor math clarifications, I cheered at 3 a.m.">second-round review</span> at the <em>Journal of Computational Neuroscience</em>. What stayed with me wasn't the result. It was the quiet: one question, all of me, for as long as it took. That is the <span class="essay-annotation" tabindex="0" data-note="3.5 weeks of waking up and running straight to the code. That is why Colorado College's Block Plan felt like it was built for me.">luxury I want a Block Plan for</span>.</p>
+            <div class="answer-outcome">
+              <span class="mono">how it turned out</span>
+              <strong>Sole author · second-round peer review · Springer Nature</strong>
+            </div>
+            <div class="answer-sign">
+              <span class="hand">— Mina</span>
+              <div class="answer-actions">
+                <button class="btn btn-small btn-ink" type="button" data-open-answer data-cursor="read">open it as a letter</button>
+                <button class="btn btn-small btn-ghost" id="copy-essay-btn" type="button" data-cursor="copy">copy essay</button>
+                <a class="answer-link" href="#question" data-cursor="scroll">see the long version ↓</a>
+              </div>
+            </div>
+            <div class="margin-note-card" id="margin-note-card" aria-hidden="true">
+              <span class="margin-note-pin">📌</span>
+              <span class="mono margin-note-label">behind the line:</span>
+              <p class="margin-note-text" id="margin-note-text">Hover or tap any underlined phrase above to read what happened off the page.</p>
+            </div>
+            <span class="answer-stamp" aria-hidden="true">in review</span>
+          </article>
+        </div>
+      </div>
+      <svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0,50 C230,88 440,8 690,36 C940,64 1160,10 1440,44 L1440,90 L0,90 Z" fill="#F6F0E4"/></svg>
+    </section>
+
+    <!-- ─────────────────────────── QUESTION ─────────────────────────── -->
+    <section class="section question" id="question">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal"><span class="eyebrow-dot"></span>01 — the question</p>
+          <h2 class="display reveal">Everyone asked how a nerve fires.<br>I asked what the brain <em class="marker marker-coral">ignores.</em></h2>
+          <p class="lede reveal">Eleventh-grade biology. One sideways question. Then three and a half weeks of not letting go.</p>
+        </div>
+
+        <div class="question-grid">
+          <article class="notebook reveal">
+            <div class="notebook-holes" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+            <div class="notebook-top">
+              <span class="mono">biology / grade 11</span>
+              <span class="mono">one sideways question</span>
+            </div>
+            <p class="notebook-question">How does the brain know what to <span class="circled">ignore</span>?</p>
+            <p class="notebook-note">My version of a Block Plan didn't come with a syllabus. It came with a question.</p>
+
+            <div class="timeline" aria-label="The focus arc: ask, read, model, rebuild, submit">
+              <div class="timeline-rail"><span class="timeline-fill" id="timeline-fill"></span></div>
+              <ol class="timeline-steps">
+                <li class="timeline-step is-active" role="button" tabindex="0" data-step="0" data-note="The sideways question: 'Why doesn't the brain drown in background noise?' The class debated for 45 minutes." data-cursor="ask">
+                  <span class="timeline-dot"></span>
+                  <strong>ask</strong>
+                  <small>the sideways question</small>
+                </li>
+                <li class="timeline-step" role="button" tabindex="0" data-step="1" data-note="Read 40+ research papers on peripheral nerve injury, ephaptic crosstalk, and core-conductor cable theory. Dictionary tab was hot." data-cursor="read">
+                  <span class="timeline-dot"></span>
+                  <strong>read</strong>
+                  <small>until the noise made sense</small>
+                </li>
+                <li class="timeline-step" role="button" tabindex="0" data-step="2" data-note="Modeled unmyelinated fibers in Python: extracellular resistance, internodal spacing, and radial compression spikes." data-cursor="model">
+                  <span class="timeline-dot"></span>
+                  <strong>model</strong>
+                  <small>a closed loop of fibers</small>
+                </li>
+                <li class="timeline-step" role="button" tabindex="0" data-step="3" data-note="Rebuilt the numerical integrator 10+ times after differential equations diverged. Sleep on Thursdays only." data-cursor="rebuild">
+                  <span class="timeline-dot"></span>
+                  <strong>rebuild</strong>
+                  <small>more times than I can count</small>
+                </li>
+                <li class="timeline-step" role="button" tabindex="0" data-step="4" data-note="Submitted sole-authored to Springer Nature's Journal of Computational Neuroscience. In second-round review!" data-cursor="submit">
+                  <span class="timeline-dot"></span>
+                  <strong>submit</strong>
+                  <small>and wait</small>
+                </li>
+              </ol>
+              <div class="timeline-popover" id="timeline-popover" aria-live="polite">
+                <span class="mono">focus log · step <span id="timeline-step-num">1</span> of 5</span>
+                <p id="timeline-popover-text">Click any milestone above to inspect what happened behind the code.</p>
+              </div>
+            </div>
+
+            <div class="notebook-foot">
+              <span class="scribble">∞ drafts</span>
+              <button class="btn btn-ink magnetic" type="button" data-open-answer data-cursor="read">
+                read the answer
+                <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"></use></svg>
+              </button>
+            </div>
+            <span class="coffee-ring" aria-hidden="true"></span>
+            <span class="paper-clip" aria-hidden="true"></span>
+          </article>
+
+          <aside class="question-aside">
+            <div class="sticky-note note-a reveal" style="--rot:-3deg">
+              <span class="mono">the mechanism</span>
+              <p><strong>Aβ</strong> <span class="arrow-inline">→</span> <strong>C</strong></p>
+              <p class="hand">touch → pain<br>when the nerve is squeezed</p>
+              <span class="note-doodle" aria-hidden="true">
+                <svg viewBox="0 0 90 40"><path d="M5 22c12-18 20 12 32-2s18 15 28-3 12 9 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              </span>
+            </div>
+            <div class="sticky-note note-b reveal" style="--rot:2.5deg">
+              <span class="mono">the instinct</span>
+              <p class="hand big-hand">understand the noise,<br>and the signal takes<br>care of itself.</p>
+              <span class="tape" aria-hidden="true"></span>
+            </div>
+            <div class="result-card reveal">
+              <span class="mono">the result</span>
+              <p class="result-title">Sole author.<br>Second-round peer review.</p>
+              <p class="result-journal">Journal of Computational Neuroscience<br><span>Springer Nature</span></p>
+              <span class="result-stamp">in review</span>
+              <div class="result-lines" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+            </div>
+            <div class="ticket reveal" style="--rot:-1.5deg">
+              <span class="mono">admit one</span>
+              <p><strong>3.5 weeks</strong><br>one question<br>all of me</p>
+              <span class="ticket-dots" aria-hidden="true">••••••</span>
+            </div>
+          </aside>
+        </div>
+
+        <div class="cleft-lab reveal" id="cleft-lab">
+          <div class="cleft-copy">
+            <p class="eyebrow"><span class="eyebrow-dot"></span>the paper, in one slider</p>
+            <h3 class="sub-display">Squeeze the nerve.<br>Watch touch become <em>pain.</em></h3>
+            <p>When a nerve is compressed, signals leak from touch fibers into pain fibers. I built a closed-loop model of how space and time sum that interference.</p>
+            <p class="mono cleft-key">Aβ = touch &nbsp;·&nbsp; C = pain &nbsp;·&nbsp; the gap is the story</p>
+            <div class="cleft-controls">
+              <label class="range-label" for="cleft-range">squeeze</label>
+              <input class="range" type="range" id="cleft-range" min="0" max="100" value="18" aria-label="Compress the nerve">
+              <div class="cleft-readout">
+                <span id="cleft-gap">gap 118 µm</span>
+                <span id="cleft-cross">crosstalk 16%</span>
+              </div>
+            </div>
+          </div>
+          <div class="cleft-art">
+            <svg class="cleft-svg" viewBox="0 0 720 330" role="img" aria-label="Two nerve fibers, touch and pain, with sparks crossing a compressed gap">
+              <defs>
+                <clipPath id="cleft-clip"><rect x="20" y="20" width="680" height="290" rx="28"/></clipPath>
+                <filter id="glow-coral" x="-50%" y="-50%" width="200%" height="200%">
+                  <feGaussianBlur stdDeviation="4" result="blur"/>
+                  <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                </filter>
+              </defs>
+              <g clip-path="url(#cleft-clip)">
+                <rect x="20" y="20" width="680" height="290" rx="28" fill="#FFF9EE"/>
+                <path d="M20 260c70-30 140 20 210-6s150-42 220-8 150 24 250-4v68H20z" fill="#F6F0E4"/>
+                <g opacity=".55" stroke="#171512" stroke-width="1.4" stroke-linecap="round">
+                  <path d="M70 70c22-12 36 14 58 2"/><path d="M600 82c22-12 36 14 58 2"/>
+                  <path d="M95 105c12-7 20 8 32 1"/><path d="M630 118c12-7 20 8 32 1"/>
+                </g>
+                <g id="fiber-touch">
+                  <path d="M60 122h600" fill="none" stroke="#FF5C45" stroke-width="18" stroke-linecap="round"/>
+                  <path d="M60 122h600" fill="none" stroke="#171512" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 14" opacity=".55"/>
+                  <circle cx="60" cy="122" r="10" fill="#FF5C45" stroke="#171512" stroke-width="2"/>
+                  <text x="78" y="100" font-family="IBM Plex Mono, monospace" font-size="13" fill="#171512">Aβ · touch</text>
+                </g>
+                <g id="fiber-pain">
+                  <path d="M60 218h600" fill="none" stroke="#2F5BFF" stroke-width="18" stroke-linecap="round"/>
+                  <path d="M60 218h600" fill="none" stroke="#171512" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 14" opacity=".55"/>
+                  <circle cx="60" cy="218" r="10" fill="#2F5BFF" stroke="#171512" stroke-width="2"/>
+                  <text x="78" y="252" font-family="IBM Plex Mono, monospace" font-size="13" fill="#171512">C · pain</text>
+                </g>
+                <g id="cleft-sparks" filter="url(#glow-coral)" opacity="0">
+                  <path d="M300 140l-10 18 16-4-12 24" fill="none" stroke="#FFC53D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M390 140l-8 16 14-3-10 22" fill="none" stroke="#FF5C45" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M460 200l-10-18 16 4-12-24" fill="none" stroke="#FFC53D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="330" cy="166" r="4" fill="#FF5C45"/>
+                  <circle cx="420" cy="176" r="3" fill="#FFC53D"/>
+                  <circle cx="480" cy="158" r="3" fill="#FF5C45"/>
+                </g>
+                <g id="cleft-pinch">
+                  <path d="M350 70v-34M370 70v-34" stroke="#171512" stroke-width="2" stroke-linecap="round"/>
+                  <rect x="330" y="28" width="60" height="16" rx="8" fill="#FFC53D" stroke="#171512" stroke-width="2"/>
+                  <text x="360" y="40" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#171512">squeeze</text>
+                </g>
+                <g id="cleft-label" opacity="0">
+                  <rect x="528" y="140" width="142" height="52" rx="26" fill="#171512"/>
+                  <text x="599" y="163" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#FFF9EE">touch becomes pain</text>
+                  <text x="599" y="180" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="16" fill="#FFC53D">ouch.</text>
+                </g>
+              </g>
+            </svg>
+            <span class="cleft-sticker">one model · one paper · one very quiet room</span>
+          </div>
+        </div>
+      </div>
+      <svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0,46 C210,92 400,-2 640,26 C880,54 1110,16 1440,52 L1440,90 L0,90 Z" fill="#101433"/></svg>
+    </section>
+
+    <!-- ─────────────────────────── NOISE ─────────────────────────── -->
+    <section class="section noise" id="noise">
+      <canvas class="noise-canvas" id="noise-canvas" aria-hidden="true"></canvas>
+      <div class="noise-stars" aria-hidden="true"></div>
+      <div class="container noise-inner">
+        <div class="section-head light">
+          <p class="eyebrow reveal"><span class="eyebrow-dot"></span>02 — the noise</p>
+          <h2 class="display reveal">The body is loud.<br>The signal is <em class="marker marker-mint">small.</em></h2>
+          <p class="lede reveal">Everyone else looked harder for the sugar. I learned the noise — and subtracted it.</p>
+        </div>
+
+        <div class="noise-lab">
+          <div class="knob-wrap reveal">
+            <div class="knob" id="focus-knob" role="slider" tabindex="0" aria-label="Tune out the noise" aria-valuemin="0" aria-valuemax="100" aria-valuenow="18" aria-valuetext="Noise 82 percent, signal 18 percent" data-cursor="tune">
+              <div class="knob-track" aria-hidden="true"></div>
+              <div class="knob-ticks" aria-hidden="true"></div>
+              <div class="knob-face">
+                <span class="knob-handle" id="knob-handle" aria-hidden="true"></span>
+                <span class="knob-value" id="knob-value">18</span>
+                <span class="knob-label">signal</span>
+              </div>
+            </div>
+            <p class="knob-hint">drag to focus <span>·</span> or use ← →</p>
+            <button class="btn btn-ghost-light magnetic" id="auto-focus" type="button" data-cursor="show me">show me</button>
+          </div>
+
+          <div class="noise-copy reveal">
+            <div class="noise-readout">
+              <div class="readout-cell">
+                <span class="mono">noise</span>
+                <strong id="noise-val">82%</strong>
+                <span class="readout-bar"><i id="noise-bar" style="width:82%"></i></span>
+              </div>
+              <div class="readout-cell">
+                <span class="mono">signal</span>
+                <strong id="signal-val">18%</strong>
+                <span class="readout-bar readout-bar-signal"><i id="signal-bar" style="width:18%"></i></span>
+              </div>
+            </div>
+            <p class="noise-main">Temperature. Sweat. Blood pressure. Heart rate. The body is a chorus of false alarms. I built a near-infrared sensor that learned the chorus, then subtracted it.</p>
+            <p class="noise-small">Same instinct, different question: <em>how does the brain know what to ignore?</em></p>
+            <div class="noise-reveal" id="noise-reveal">
+              <span class="spark" aria-hidden="true">✦</span>
+              <span>the answer was in the noise</span>
+            </div>
+            <p class="noise-foot mono">the glucose sensor, in one sentence</p>
+          </div>
+        </div>
+      </div>
+      <svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0,34 C180,80 380,10 620,42 C860,74 1080,8 1440,46 L1440,90 L0,90 Z" fill="#F6F0E4"/></svg>
+    </section>
+
+    <!-- ─────────────────────────── BUILDS ─────────────────────────── -->
+    <section class="section builds" id="builds">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal"><span class="eyebrow-dot"></span>03 — the workbench</p>
+          <h2 class="display reveal">I like ideas that <em class="marker marker-marigold">hold weight.</em></h2>
+          <p class="lede reveal">The paper was one question. These were the others I couldn't put down — the same muscle, different weights. Poke around. Nothing here is behind glass.</p>
+        </div>
+
+        <div class="bento">
+          <!-- BRIDGE -->
+          <article class="project project-bridge tilt reveal" id="project-bridge">
+            <div class="project-top">
+              <span class="mono">01 / capstone</span>
+              <span class="tag tag-ink">grade 10</span>
+            </div>
+            <div class="project-art bridge-art">
+              <svg class="bridge-svg" viewBox="0 0 640 300" role="img" aria-label="A palm-stick truss bridge with a movable span over water">
+                <defs>
+                  <pattern id="palm-lines" width="16" height="16" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+                    <path d="M0 8h16" stroke="#171512" stroke-width="1" opacity=".18"/>
+                  </pattern>
+                </defs>
+                <circle cx="538" cy="62" r="30" fill="#FFF9EE" stroke="#171512" stroke-width="2" stroke-dasharray="3 5"/>
+                <g opacity=".5" stroke="#171512" stroke-width="1.5" stroke-linecap="round">
+                  <path d="M72 72c18-10 28 10 46 0"/><path d="M92 94c10-6 16 6 26 0"/>
+                  <path d="M558 232c12-7 20 7 32 0"/><path d="M508 246c10-6 16 6 26 0"/>
+                </g>
+                <g id="bridge-deck">
+                  <path d="M66 192h508" stroke="#171512" stroke-width="3" stroke-linecap="round"/>
+                  <path d="M66 200h508" stroke="#171512" stroke-width="2" stroke-linecap="round" opacity=".45"/>
+                  <rect x="66" y="184" width="508" height="16" fill="url(#palm-lines)" stroke="#171512" stroke-width="2" rx="4"/>
+                  <g stroke="#171512" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M108 190v-76h44v76M152 190l22-76M108 114h110l22 76"/>
+                    <path d="M196 190l24-76M220 114h72l24 76"/>
+                    <path d="M404 190l24-76M428 114h44v76"/>
+                    <path d="M472 190v-76h44v76"/>
+                    <path d="M108 114l44 76M152 114l44 76M196 114l24 76M220 114l24 76M404 114l24 76M428 114l44 76M472 114l44 76"/>
+                  </g>
+                  <g id="movable-span">
+                    <path d="M292 190l20-58h48l20 58" stroke="#FF5C45" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M312 132h48M316 146h40M320 160h32" stroke="#171512" stroke-width="2" stroke-linecap="round" opacity=".55"/>
+                    <path d="M292 190h100" stroke="#FF5C45" stroke-width="6" stroke-linecap="round"/>
+                    <path d="M300 122c-8-20-24-26-38-30M384 122c8-20 24-26 38-30" stroke="#171512" stroke-width="1.5" stroke-dasharray="3 5" fill="none"/>
+                  </g>
+                  <g fill="#171512">
+                    <circle cx="108" cy="114" r="4"/><circle cx="152" cy="114" r="4"/><circle cx="220" cy="114" r="4"/><circle cx="292" cy="114" r="4"/><circle cx="384" cy="114" r="4"/><circle cx="428" cy="114" r="4"/><circle cx="472" cy="114" r="4"/>
+                  </g>
+                </g>
+                <path d="M56 232c60-18 110 16 168-2s110 16 168-2 110 16 192-2v46H56z" fill="#FFC53D" opacity=".55"/>
+                <path d="M80 246c50-10 90 10 140 0M340 254c50-10 90 10 140 0M470 240c30-6 54 6 84 0" stroke="#171512" stroke-width="2" stroke-linecap="round" fill="none" opacity=".35"/>
+                <g id="bridge-flag" opacity="0">
+                  <path d="M536 114v-38" stroke="#171512" stroke-width="2"/>
+                  <path d="M536 76l40 10-40 12z" fill="#FF5C45" stroke="#171512" stroke-width="2"/>
+                  <text x="548" y="90" font-family="IBM Plex Mono, monospace" font-size="10" fill="#171512">45</text>
+                </g>
+              </svg>
+              <div class="weight-block" id="bridge-weight" aria-hidden="true"><span>10</span><small>kg</small></div>
+              <div class="bridge-callout" id="bridge-callout">a professor asked for my number</div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">The bridge that held <em>45 kg.</em></h3>
+              <p>Palm sticks. Ten rebuilds. A lifting mechanism nobody else used. Every teammate earned an A.</p>
+              <div class="project-action">
+                <button class="btn btn-small btn-ink" id="bridge-btn" type="button" data-cursor="add weight">add 10 kg</button>
+                <span class="mono project-readout" id="bridge-readout">required: 10 kg</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- BANANA -->
+          <article class="project project-banana tilt reveal" id="project-banana">
+            <div class="project-top">
+              <span class="mono">02 / materials</span>
+              <span class="tag">2nd place · IEEE IC-SIT</span>
+            </div>
+            <div class="project-art banana-art">
+              <svg class="banana-svg" viewBox="0 0 420 300" role="img" aria-label="A banana being peeled to reveal a spool of biodegradable 3D printing filament">
+                <circle cx="330" cy="70" r="42" fill="#FFF9EE" stroke="#171512" stroke-width="2" stroke-dasharray="3 5"/>
+                <g class="banana-peel">
+                  <g class="peel peel-1">
+                    <path d="M154 106c-34 40-46 92-30 138 9 26 31 36 51 25 15-8 19-25 12-42-10-24-11-58 4-96z" fill="#FFC53D" stroke="#171512" stroke-width="3" stroke-linejoin="round"/>
+                    <path d="M162 120c-22 34-28 76-18 112" stroke="#171512" stroke-width="1.5" opacity=".3" fill="none"/>
+                  </g>
+                  <g class="peel peel-2">
+                    <path d="M216 100c22 34 32 76 22 118-6 26-26 38-46 29-16-7-21-24-14-42 10-25 8-62-10-98z" fill="#FFD968" stroke="#171512" stroke-width="3" stroke-linejoin="round"/>
+                    <path d="M212 118c16 32 20 70 10 102" stroke="#171512" stroke-width="1.5" opacity=".3" fill="none"/>
+                  </g>
+                  <g class="peel peel-3">
+                    <path d="M178 92c-10 30-12 62 0 92 9 22 30 30 48 18 15-10 17-27 7-43-14-22-18-44-13-68z" fill="#FFE18A" stroke="#171512" stroke-width="3" stroke-linejoin="round"/>
+                  </g>
+                </g>
+                <path class="banana-flesh" d="M176 98c4 38 8 70 24 94 10 15 29 17 40 4 9-11 7-28-5-41-18-20-25-40-25-62z" fill="#FFF3C4" stroke="#171512" stroke-width="3" stroke-linejoin="round"/>
+                <path d="M186 96c4 20 10 36 20 48" stroke="#171512" stroke-width="1.4" opacity=".3" fill="none"/>
+                <path d="M208 82c0-12 8-20 20-22" stroke="#171512" stroke-width="4" stroke-linecap="round" fill="none"/>
+                <path d="M228 60c4-8 12-10 18-6" stroke="#7BE0AD" stroke-width="4" stroke-linecap="round" fill="none"/>
+                <g class="spool" aria-hidden="true">
+                  <ellipse cx="308" cy="232" rx="58" ry="18" fill="#171512" opacity=".12"/>
+                  <path d="M268 186h80v48h-80z" fill="#FFF9EE" stroke="#171512" stroke-width="3"/>
+                  <path d="M268 186c0-10 18-18 40-18s40 8 40 18-18 18-40 18-40-8-40-18z" fill="#FFC53D" stroke="#171512" stroke-width="3"/>
+                  <path d="M274 206h68M274 216h68M274 226h68" stroke="#FF5C45" stroke-width="3" stroke-linecap="round"/>
+                  <path d="M348 208c22 2 26 20 12 30" stroke="#171512" stroke-width="2" fill="none"/>
+                </g>
+                <g class="banana-badge" aria-hidden="true">
+                  <circle cx="86" cy="74" r="34" fill="#FF5C45" stroke="#171512" stroke-width="2"/>
+                  <text x="86" y="70" text-anchor="middle" font-family="Fraunces, serif" font-weight="800" font-size="17" fill="#FFF9EE">2nd</text>
+                  <text x="86" y="86" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="7" fill="#FFF9EE">IEEE</text>
+                </g>
+                <g opacity=".5" stroke="#171512" stroke-width="1.5" stroke-linecap="round">
+                  <path d="M60 250c18-9 30 9 48 0"/><path d="M320 54c10-6 16 6 26 0"/>
+                </g>
+              </svg>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">The banana that became <em>plastic.</em></h3>
+              <p>Discarded stems → printable filament. More cut fingers than I can count.</p>
+              <div class="project-action">
+                <button class="btn btn-small btn-ink" id="banana-btn" type="button" data-cursor="peel">peel it</button>
+                <span class="mono project-readout">biodegradable · printable</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- SENSOR -->
+          <article class="project project-sensor tilt reveal" id="project-sensor">
+            <div class="project-top">
+              <span class="mono">03 / sensing</span>
+              <span class="tag">ISEF Egypt · regional finals</span>
+            </div>
+            <div class="project-art sensor-art">
+              <div class="sensor-noise" id="sensor-noise" aria-hidden="true">
+                <span style="--x:8%;--y:16%">sweat</span>
+                <span style="--x:66%;--y:8%">temp</span>
+                <span style="--x:76%;--y:42%">heart rate</span>
+                <span style="--x:16%;--y:62%">pressure</span>
+              </div>
+              <svg class="sensor-svg" viewBox="0 0 420 320" role="img" aria-label="A finger wearing a near-infrared sensor clip connected to a small screen">
+                <circle cx="84" cy="72" r="40" fill="#FFF9EE" stroke="#171512" stroke-width="2" stroke-dasharray="3 5"/>
+                <g opacity=".45" stroke="#171512" stroke-width="1.5" stroke-linecap="round">
+                  <path d="M300 60c16-8 26 8 42 0"/><path d="M64 260c14-8 24 8 38 0"/>
+                </g>
+                <path d="M184 268c-6-52-4-110 10-154 8-26 28-42 52-38 26 4 40 28 34 56-10 48-18 92-14 136z" fill="#FFE3CF" stroke="#171512" stroke-width="3" stroke-linejoin="round"/>
+                <path d="M210 238c-2-38 2-78 12-110 5-16 16-26 30-26" stroke="#171512" stroke-width="1.5" opacity=".25" fill="none"/>
+                <path d="M246 78c-10 2-16 10-16 20 0 12 10 20 22 18" fill="#FFF9EE" stroke="#171512" stroke-width="2"/>
+                <g class="sensor-clip">
+                  <path d="M174 170c-10-4-14-16-8-26l12-20c6-10 18-14 28-8l26 14-32 48z" fill="#2F5BFF" stroke="#171512" stroke-width="3" stroke-linejoin="round"/>
+                  <path d="M236 126c18-2 34 8 38 24l4 20c2 12-6 22-18 24l-28 4-14-52z" fill="#2F5BFF" stroke="#171512" stroke-width="3" stroke-linejoin="round"/>
+                  <circle cx="252" cy="154" r="8" fill="#FF5C45" stroke="#171512" stroke-width="2"/>
+                  <path d="M262 188c24 4 40 16 44 34" stroke="#171512" stroke-width="2" fill="none" stroke-dasharray="3 5"/>
+                </g>
+                <g class="sensor-screen">
+                  <rect x="300" y="198" width="92" height="64" rx="10" fill="#171512" stroke="#171512" stroke-width="3"/>
+                  <rect x="308" y="206" width="76" height="34" rx="5" fill="#101433"/>
+                  <text id="sensor-screen-value" x="346" y="229" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="17" fill="#FF8A73">62%</text>
+                  <circle id="sensor-screen-dot" cx="316" cy="250" r="3" fill="#FF5C45"/>
+                  <text id="sensor-screen-status" x="326" y="253" font-family="IBM Plex Mono, monospace" font-size="7" fill="#FFF9EE">NIR · noisy</text>
+                  <path d="M300 270c18-8 32 8 50 0s26 6 42 0" stroke="#171512" stroke-width="2" fill="none" opacity=".35"/>
+                </g>
+                <g class="wave-wave">
+                  <path class="wave-noisy" d="M96 190c10-28 18 26 28-2s18 30 28-4 18 28 28-2 18 24 28-6 18 30 28-4 18 26 28-2" fill="none" stroke="#FF5C45" stroke-width="3" stroke-linecap="round"/>
+                  <path class="wave-clear" d="M96 190c12-12 24 12 36 0s24-12 36 0 24 12 36 0 24-12 36 0 24 12 36 0" fill="none" stroke="#2F5BFF" stroke-width="3" stroke-linecap="round"/>
+                </g>
+              </svg>
+              <div class="sensor-readout">
+                <span class="sensor-value" id="sensor-value">62%</span>
+                <span class="sensor-status" id="sensor-status">noisy</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">The sensor that listens to <em>noise.</em></h3>
+              <p>Everyone looked harder for the signal. I studied the interference — then subtracted it.</p>
+              <div class="project-action">
+                <button class="btn btn-small btn-ink" id="sensor-btn" type="button" data-cursor="tune">turn on noise-cancelling</button>
+                <span class="mono project-readout">near-infrared · non-invasive</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- E-WASTE METER -->
+          <article class="project project-meter tilt reveal" id="project-meter">
+            <div class="project-top">
+              <span class="mono">04 / instruments</span>
+              <span class="tag">±5% · used in our labs</span>
+            </div>
+            <div class="project-art meter-art">
+              <svg class="meter-svg" viewBox="0 0 520 300" role="img" aria-label="A beaker of liquid and a digital pH meter built from electronic waste">
+                <defs>
+                  <clipPath id="beaker-clip">
+                    <path d="M154 82h150v136c0 26-22 46-50 46h-50c-28 0-50-20-50-46z"/>
+                  </clipPath>
+                </defs>
+                <g opacity=".45" stroke="#171512" stroke-width="1.5" fill="none">
+                  <path d="M56 70h74v48h-50v44h64"/><path d="M360 62v58h58v42"/>
+                  <circle cx="56" cy="70" r="4" fill="#171512"/><circle cx="360" cy="62" r="4" fill="#171512"/><circle cx="418" cy="162" r="4" fill="#171512"/>
+                </g>
+                <circle cx="430" cy="78" r="36" fill="#FFF9EE" stroke="#171512" stroke-width="2" stroke-dasharray="3 5"/>
+                <path d="M154 82h150v136c0 26-22 46-50 46h-50c-28 0-50-20-50-46z" fill="#FFF9EE" fill-opacity=".65" stroke="#171512" stroke-width="3"/>
+                <rect id="ph-liquid" x="154" y="128" width="150" height="140" fill="#7BE0AD" clip-path="url(#beaker-clip)"/>
+                <path d="M154 128h150" stroke="#171512" stroke-width="2" opacity=".4"/>
+                <g stroke="#171512" stroke-width="1.5" opacity=".45">
+                  <path d="M304 110h-20M304 130h-28M304 150h-20M304 170h-28M304 190h-20M304 210h-28"/>
+                </g>
+                <g class="meter-bubbles" fill="#FFF9EE" opacity=".7">
+                  <circle cx="190" cy="230" r="4"/><circle cx="216" cy="210" r="3"/><circle cx="262" cy="240" r="5"/><circle cx="236" cy="190" r="2.5"/>
+                </g>
+                <path d="M154 82h150" stroke="#171512" stroke-width="3" stroke-linecap="round"/>
+                <path d="M182 70h94" stroke="#171512" stroke-width="3" stroke-linecap="round"/>
+                <g class="meter-probe">
+                  <path d="M330 140l28-32" stroke="#171512" stroke-width="4" stroke-linecap="round"/>
+                  <circle cx="360" cy="104" r="10" fill="#FF5C45" stroke="#171512" stroke-width="2"/>
+                  <path d="M330 140c-12 18-16 34-10 48" stroke="#171512" stroke-width="2" fill="none" stroke-dasharray="3 5"/>
+                </g>
+                <g>
+                  <rect x="330" y="198" width="128" height="68" rx="10" fill="#171512" stroke="#171512" stroke-width="3"/>
+                  <rect x="338" y="206" width="112" height="38" rx="5" fill="#101433"/>
+                  <text id="ph-screen" x="394" y="233" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="19" fill="#7BE0AD">7.0</text>
+                  <text x="394" y="256" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="8" fill="#FFF9EE">pH · from e-waste</text>
+                </g>
+                <g class="meter-sticker" aria-hidden="true">
+                  <rect x="70" y="190" width="66" height="30" rx="15" fill="#FFC53D" stroke="#171512" stroke-width="2" transform="rotate(-8 103 205)"/>
+                  <text x="103" y="209" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9" fill="#171512" transform="rotate(-8 103 205)">±5%</text>
+                </g>
+              </svg>
+              <div class="meter-big-readout" aria-hidden="true"><span id="ph-big">7.0</span><small>pH</small></div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">The lab made from <em>e-waste.</em></h3>
+              <p>Old electronics → pH and TDS meters my school still uses. Accurate to within 5%.</p>
+              <div class="project-action project-action-slider">
+                <label class="range-label" for="ph-range">dip the probe</label>
+                <input class="range range-slim" type="range" id="ph-range" min="0" max="14" step="0.1" value="7" aria-label="Change the pH of the liquid">
+              </div>
+            </div>
+          </article>
+
+          <!-- AQUAPONICS -->
+          <article class="project project-farm tilt reveal" id="project-farm">
+            <div class="project-top">
+              <span class="mono">05 / systems</span>
+              <span class="tag">6 hrs unmanned</span>
+            </div>
+            <div class="project-art farm-art">
+              <svg class="farm-svg" viewBox="0 0 520 300" role="img" aria-label="A small aquaponics system with fish, plants, bubbles, and a sensor panel">
+                <circle cx="440" cy="66" r="38" fill="#FFC53D" stroke="#171512" stroke-width="2" stroke-dasharray="3 5"/>
+                <g class="farm-plants" stroke="#171512" stroke-width="2.5" fill="none" stroke-linecap="round">
+                  <path d="M120 118V72M120 90c-18-8-30-2-36 10 16 8 28 4 36-10zM120 80c16-10 30-6 38 4-14 12-28 10-38-4z" fill="#7BE0AD"/>
+                  <path d="M190 118V62M190 88c-20-6-32 2-36 14 18 6 30 0 36-14zM190 74c18-10 32-4 38 8-16 10-30 6-38-8z" fill="#8FE3B0"/>
+                  <path d="M260 118V78M260 96c-16-8-28-2-32 10 14 8 26 4 32-10zM260 84c14-8 26-4 32 6-12 10-24 8-32-6z" fill="#7BE0AD"/>
+                  <path d="M330 118V70M330 92c-18-8-30-2-36 10 16 8 28 4 36-10zM330 80c16-10 30-6 38 4-14 12-28 10-38-4z" fill="#8FE3B0"/>
+                </g>
+                <path d="M74 120h340v116c0 16-14 28-30 28H104c-16 0-30-12-30-28z" fill="#8ED8F8" fill-opacity=".55" stroke="#171512" stroke-width="3"/>
+                <path d="M74 120h340" stroke="#171512" stroke-width="3"/>
+                <path d="M74 156h340M74 198h340" stroke="#FFF9EE" stroke-width="1.5" opacity=".55" stroke-dasharray="4 8"/>
+                <g class="farm-fish fish-1">
+                  <path d="M156 186c22-22 52-22 74 0-22 22-52 22-74 0z" fill="#FF5C45" stroke="#171512" stroke-width="2.5"/>
+                  <path d="M156 186l-20-14v28z" fill="#FF5C45" stroke="#171512" stroke-width="2.5" stroke-linejoin="round"/>
+                  <circle cx="214" cy="181" r="2.5" fill="#171512"/>
+                </g>
+                <g class="farm-fish fish-2">
+                  <path d="M284 218c18-18 42-18 60 0-18 18-42 18-60 0z" fill="#FFC53D" stroke="#171512" stroke-width="2.5"/>
+                  <path d="M284 218l-16-11v22z" fill="#FFC53D" stroke="#171512" stroke-width="2.5" stroke-linejoin="round"/>
+                  <circle cx="330" cy="214" r="2.2" fill="#171512"/>
+                </g>
+                <g class="farm-bubbles" fill="#FFF9EE" stroke="#171512" stroke-width="1.2">
+                  <circle cx="240" cy="250" r="4"/><circle cx="258" cy="236" r="3"/><circle cx="226" cy="228" r="2.5"/><circle cx="272" cy="250" r="3.5"/>
+                </g>
+                <g>
+                  <rect x="356" y="214" width="94" height="52" rx="8" fill="#171512"/>
+                  <circle cx="372" cy="230" r="3" fill="#7BE0AD"/><text x="380" y="233" font-family="IBM Plex Mono, monospace" font-size="7" fill="#FFF9EE">O2</text>
+                  <circle cx="372" cy="244" r="3" fill="#FFC53D"/><text x="380" y="247" font-family="IBM Plex Mono, monospace" font-size="7" fill="#FFF9EE">pH</text>
+                  <circle cx="372" cy="258" r="3" fill="#8ED8F8"/><text x="380" y="261" font-family="IBM Plex Mono, monospace" font-size="7" fill="#FFF9EE">H2O</text>
+                  <path d="M420 228c8-4 14 4 22 0M420 242c8-4 14 4 22 0" stroke="#FFF9EE" stroke-width="1.5" opacity=".5" fill="none"/>
+                </g>
+                <path d="M74 120h340" stroke="#171512" stroke-width="3" stroke-linecap="round"/>
+                <g class="farm-status-chips">
+                  <g transform="translate(84 62)"><rect width="74" height="22" rx="11" fill="#FFF9EE" stroke="#171512" stroke-width="1.5"/><text x="37" y="15" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="8" fill="#171512">O₂ 92%</text></g>
+                  <g transform="translate(166 62)"><rect width="74" height="22" rx="11" fill="#FFF9EE" stroke="#171512" stroke-width="1.5"/><text x="37" y="15" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="8" fill="#171512">pH 7.1</text></g>
+                  <g transform="translate(248 62)"><rect width="90" height="22" rx="11" fill="#FFF9EE" stroke="#171512" stroke-width="1.5"/><text x="45" y="15" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="8" fill="#171512">water 98%</text></g>
+                </g>
+              </svg>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">The farm that <em>feeds itself.</em></h3>
+              <p>It watches oxygen, pH, food, and water — and corrects what drifts. Six hours without me.</p>
+              <div class="project-action">
+                <button class="btn btn-small btn-ink" id="farm-btn" type="button" data-cursor="feed">feed the fish</button>
+                <span class="mono project-readout">closed-loop · 6 hrs</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- AI GRADER -->
+          <article class="project project-grader tilt reveal" id="project-grader">
+            <div class="project-top">
+              <span class="mono">06 / ai + education</span>
+              <span class="tag">in progress</span>
+            </div>
+            <div class="project-art grader-art">
+              <div class="exam-paper" id="exam-paper">
+                <div class="exam-head"><span>PHYSICS · QUIZ 04</span><span>NAME: ______</span></div>
+                <div class="handwriting">
+                  <span>F = m a</span>
+                  <span>a = F / m</span>
+                  <span>a = 20 / 10 = <b>2 m/s²</b></span>
+                  <span class="scribble-line">the cart accelerates to the right…</span>
+                </div>
+                <span class="red-check check-1">✓</span>
+                <span class="red-check check-2">✓</span>
+                <span class="red-check check-3">✓</span>
+                <span class="grade-circle" id="grade-circle">84</span>
+                <div class="scanner-bar" aria-hidden="true"></div>
+              </div>
+              <span class="grader-pen" aria-hidden="true">
+                <svg viewBox="0 0 80 80"><path d="M18 62l8-22 30-30 14 14-30 30z" fill="#FF5C45" stroke="#171512" stroke-width="3" stroke-linejoin="round"/><path d="M18 62l8-22 14 14z" fill="#FFF9EE" stroke="#171512" stroke-width="3" stroke-linejoin="round"/><path d="M56 10l14 14" stroke="#171512" stroke-width="3" stroke-linecap="round"/></svg>
+              </span>
+              <div class="grader-note">reads it · solves it · marks it</div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">The exam that <em>grades itself.</em></h3>
+              <p>It reads handwritten answers, solves them, and marks them. Still in progress — some things should stay human.</p>
+              <div class="project-action">
+                <button class="btn btn-small btn-ink" id="grader-btn" type="button" data-cursor="grade">grade it</button>
+                <span class="mono project-readout">AI · still learning</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="more-builds reveal">
+          <span class="mono">also on the bench</span>
+          <div class="marquee marquee-tags" aria-label="More projects">
+            <div class="marquee-track">
+              <span>water turbine + microbial fuel cells</span><i>✦</i>
+              <span>fish-inspired water filter</span><i>✦</i>
+              <span>smart home lighting</span><i>✦</i>
+              <span>Martian regolith bricks</span><i>✦</i>
+              <span>greywater filter</span><i>✦</i>
+              <span>dozens of Arduino + ESP32 robots</span><i>✦</i>
+              <span>water turbine + microbial fuel cells</span><i>✦</i>
+              <span>fish-inspired water filter</span><i>✦</i>
+              <span>smart home lighting</span><i>✦</i>
+              <span>Martian regolith bricks</span><i>✦</i>
+              <span>greywater filter</span><i>✦</i>
+              <span>dozens of Arduino + ESP32 robots</span><i>✦</i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0,50 C230,88 440,8 690,36 C940,64 1160,10 1440,44 L1440,90 L0,90 Z" fill="#E6F1E0"/></svg>
+    </section>
+
+    <!-- ─────────────────────────── GARDEN ─────────────────────────── -->
+    <section class="section garden" id="garden">
+      <div class="garden-grass" aria-hidden="true">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0 120V86c40-22 58 12 94-2s58-26 96-4 56 22 92-2 60-22 96 2 58 18 94-2 60-22 96 2 58 18 94-2 60-22 96 2 58 18 94-2 60-22 96 2 58 18 94-2 60-22 96 2 58 18 94-2 60-22 96 2v38z" fill="#CBE7C2" opacity=".55"/></svg>
+      </div>
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal"><span class="eyebrow-dot"></span>04 — the garden</p>
+          <h2 class="display reveal">I planted <em class="marker marker-mint">nine.</em></h2>
+          <p class="lede reveal">Nine academic clubs, founded and supervised. Focus isn't only solitude; I wanted the students after me to have somewhere to ask.</p>
+        </div>
+
+        <div class="garden-grid">
+          <div class="flower-stage reveal">
+            <div class="flower" id="flower">
+              <div class="flower-rings" aria-hidden="true"><span></span><span></span><span></span></div>
+              <div class="petal-wrap" style="--i:0;--c:#FF5C45"><button class="petal" type="button" data-club="Chemistry" data-note="0" aria-label="Chemistry club"><span>CH</span></button></div>
+              <div class="petal-wrap" style="--i:1;--c:#FFC53D"><button class="petal" type="button" data-club="Biology" data-note="1" aria-label="Biology club"><span>BI</span></button></div>
+              <div class="petal-wrap" style="--i:2;--c:#2F5BFF"><button class="petal" type="button" data-club="Classical Physics" data-note="2" aria-label="Classical Physics club"><span>PH</span></button></div>
+              <div class="petal-wrap" style="--i:3;--c:#8FE3B0"><button class="petal" type="button" data-club="Earth Science" data-note="3" aria-label="Earth Science club"><span>ES</span></button></div>
+              <div class="petal-wrap" style="--i:4;--c:#C4B5FD"><button class="petal" type="button" data-club="Applied Mathematics" data-note="4" aria-label="Applied Mathematics club"><span>MA</span></button></div>
+              <div class="petal-wrap" style="--i:5;--c:#8ED8F8"><button class="petal" type="button" data-club="English Linguistics" data-note="5" aria-label="English Linguistics club"><span>EN</span></button></div>
+              <div class="petal-wrap" style="--i:6;--c:#FF9ECD"><button class="petal" type="button" data-club="Arabic Literature" data-note="6" aria-label="Arabic Literature club"><span>AR</span></button></div>
+              <div class="petal-wrap" style="--i:7;--c:#FFD9C7"><button class="petal" type="button" data-club="German" data-note="7" aria-label="German club"><span>DE</span></button></div>
+              <div class="petal-wrap" style="--i:8;--c:#F4E285"><button class="petal" type="button" data-club="French" data-note="8" aria-label="French club"><span>FR</span></button></div>
+              <div class="flower-center">
+                <span class="flower-face" id="flower-face" data-mood="smile" aria-hidden="true">
+                  <svg class="face-mood face-smile" viewBox="0 0 48 48">
+                    <circle cx="16" cy="18" r="2.6" fill="currentColor"/>
+                    <circle cx="32" cy="18" r="2.6" fill="currentColor"/>
+                    <path d="M14 28c3.4 6.6 16.6 6.6 20 0" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                  </svg>
+                  <svg class="face-mood face-note" viewBox="0 0 48 48">
+                    <path d="M20 10v23M20 10l14-4v20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    <ellipse cx="15.5" cy="34" rx="6" ry="4.5" fill="currentColor"/>
+                    <ellipse cx="35.5" cy="27" rx="6" ry="4.5" fill="currentColor"/>
+                  </svg>
+                  <svg class="face-mood face-star" viewBox="0 0 48 48">
+                    <path d="M24 7l5.2 10.7 11.8 1.6-8.6 8.3 2.1 11.7L24 33.8 13.5 39.3l2.1-11.7L7 19.3l11.8-1.6z" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <span class="flower-count">9</span>
+                <small>clubs</small>
+              </div>
+              <div class="bee" id="bee" aria-hidden="true">
+                <svg viewBox="0 0 70 60">
+                  <ellipse cx="22" cy="18" rx="13" ry="8" fill="#FFF9EE" stroke="#171512" stroke-width="2" transform="rotate(-28 22 18)"/>
+                  <ellipse cx="46" cy="18" rx="13" ry="8" fill="#FFF9EE" stroke="#171512" stroke-width="2" transform="rotate(28 46 18)"/>
+                  <ellipse cx="35" cy="36" rx="17" ry="13" fill="#FFC53D" stroke="#171512" stroke-width="2.5"/>
+                  <path d="M28 25v22M40 25v22" stroke="#171512" stroke-width="3"/>
+                  <circle cx="28" cy="31" r="2" fill="#171512"/><circle cx="42" cy="31" r="2" fill="#171512"/>
+                  <path d="M32 41c2 3 6 3 8 0" stroke="#171512" stroke-width="2" fill="none" stroke-linecap="round"/>
+                  <path d="M30 22l-3-8M42 22l4-8" stroke="#171512" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <p class="club-readout" id="club-readout">hover a petal <span>·</span> each one is a club</p>
+            <ul class="club-list" aria-label="All nine clubs">
+              <li>Chemistry</li><li>Biology</li><li>Classical Physics</li>
+              <li>Earth Science</li><li>Applied Mathematics</li><li>English Linguistics</li>
+              <li>Arabic Literature</li><li>German</li><li>French</li>
+            </ul>
+          </div>
+
+          <aside class="garden-aside">
+            <div class="teacher-card reveal">
+              <div class="chalkboard" aria-hidden="true">
+                <span class="chalk-note">today:</span>
+                <span class="chalk-eq">F = ma</span>
+                <span class="chalk-doodle">→ ⚽</span>
+                <span class="chalk-smile">:)</span>
+              </div>
+              <p class="mono">volunteer physics teacher · 2026</p>
+              <p class="teacher-quote">When our school lost a physics teacher, I taught the tenth grade. I stayed with every student who was stuck — one way, then another, then another.</p>
+              <span class="sticker-small">substitute, but make it stick</span>
+            </div>
+            <div class="garden-note reveal">
+              <span class="mono">the whole garden</span>
+              <p>Chemistry, Biology, Classical Physics, Earth Science, Applied Mathematics, English Linguistics, Arabic Literature, German, French.</p>
+              <p class="hand">nine places to ask.</p>
+            </div>
+            <div class="garden-stamp reveal">
+              <span class="stamp-ring">9/9</span>
+              <span class="mono">still growing</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+      <svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0,38 C220,82 420,6 680,34 C940,62 1160,12 1440,48 L1440,90 L0,90 Z" fill="#FFD9C7"/></svg>
+    </section>
+
+    <!-- ─────────────────────────── THANKS ─────────────────────────── -->
+    <section class="section thanks" id="thanks">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal"><span class="eyebrow-dot"></span>05 — the thank-yous</p>
+          <h2 class="display reveal">The best thing I've earned isn't <em class="marker marker-coral">on paper.</em></h2>
+          <p class="lede reveal">Ranking 169th got me in. “Thank you” is what I want to keep earning.</p>
+        </div>
+
+        <div class="thanks-grid">
+          <div class="candy-station reveal">
+            <div class="candy-jar" id="candy-jar">
+              <svg viewBox="0 0 360 420" role="img" aria-label="A glass jar full of colorful candy">
+                <ellipse cx="180" cy="388" rx="118" ry="18" fill="#171512" opacity=".12"/>
+                <g class="jar-candies">
+                  <circle cx="128" cy="306" r="18" fill="#FF5C45" stroke="#171512" stroke-width="2"/>
+                  <circle cx="170" cy="318" r="16" fill="#2F5BFF" stroke="#171512" stroke-width="2"/>
+                  <circle cx="212" cy="306" r="19" fill="#FFC53D" stroke="#171512" stroke-width="2"/>
+                  <circle cx="246" cy="326" r="14" fill="#8FE3B0" stroke="#171512" stroke-width="2"/>
+                  <circle cx="146" cy="278" r="17" fill="#C4B5FD" stroke="#171512" stroke-width="2"/>
+                  <circle cx="194" cy="284" r="18" fill="#FF9ECD" stroke="#171512" stroke-width="2"/>
+                  <circle cx="234" cy="288" r="15" fill="#8ED8F8" stroke="#171512" stroke-width="2"/>
+                  <circle cx="120" cy="336" r="12" fill="#FFC53D" stroke="#171512" stroke-width="2"/>
+                  <circle cx="260" cy="348" r="12" fill="#FF5C45" stroke="#171512" stroke-width="2"/>
+                  <path d="M116 300l-10-4M126 292l-4-10M182 306l10-4M204 314l4 10M250 320l8 6" stroke="#171512" stroke-width="2" stroke-linecap="round"/>
+                </g>
+                <path d="M104 168h152v144c0 38-34 66-76 66s-76-28-76-66z" fill="#FFF9EE" fill-opacity=".55" stroke="#171512" stroke-width="3"/>
+                <path d="M104 168h152" stroke="#171512" stroke-width="3"/>
+                <path d="M100 158h160v18H100z" fill="#FF5C45" stroke="#171512" stroke-width="3" rx="4"/>
+                <path d="M116 132h128v26H116z" fill="#FFC53D" stroke="#171512" stroke-width="3"/>
+                <path d="M128 132v-14h104v14" fill="none" stroke="#171512" stroke-width="3" stroke-linecap="round"/>
+                <path d="M120 190c-10 44-8 88 4 128" stroke="#FFF9EE" stroke-width="8" opacity=".55" stroke-linecap="round"/>
+                <g class="jar-label">
+                  <rect x="134" y="214" width="92" height="46" rx="6" fill="#FFF9EE" stroke="#171512" stroke-width="2" transform="rotate(-3 180 237)"/>
+                  <text x="180" y="233" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="8" fill="#171512" transform="rotate(-3 180 237)">TAKE ONE</text>
+                  <text x="180" y="248" text-anchor="middle" font-family="Caveat, cursive" font-size="18" fill="#171512" transform="rotate(-3 180 237)">thank you</text>
+                </g>
+                <path d="M252 174c22 4 34 18 34 38" stroke="#171512" stroke-width="1.5" stroke-dasharray="3 5" fill="none"/>
+              </svg>
+              <span class="jar-wobble" aria-hidden="true"></span>
+            </div>
+            <div class="candy-controls">
+              <button class="btn btn-coral magnetic" id="candy-btn" type="button" data-cursor="take one">take a candy</button>
+              <span class="mono" id="candy-count">candies shared: 0</span>
+            </div>
+            <p class="candy-note">I'm Christian. On the Prophet's birthday, I brought a bag of candy for everyone. It was the best way I knew to say: <em>I hope this becomes home.</em></p>
+          </div>
+
+          <div class="thank-notes">
+            <button class="thank-note note-one reveal" type="button" data-cursor="flip" aria-pressed="false">
+              <span class="note-front">
+                <span class="mono">01 / the first one</span>
+                <span class="note-icon" aria-hidden="true">
+                  <svg viewBox="0 0 80 80"><path d="M14 20h52v34H38L22 68V54H14z" fill="#FFF9EE" stroke="#171512" stroke-width="2.5" stroke-linejoin="round"/><path d="M26 34h28M26 42h18" stroke="#171512" stroke-width="2" stroke-linecap="round"/></svg>
+                </span>
+                <strong>the first thank-you</strong>
+                <span class="note-hint">flip me</span>
+              </span>
+              <span class="note-back">
+                <span class="mono">the story</span>
+                <p>He couldn't type fast or picture the scenes he wanted to describe. We fixed both. Then he said thank you. I still think that's the best thing I've earned.</p>
+              </span>
+            </button>
+
+            <button class="thank-note note-two reveal" type="button" data-cursor="flip" aria-pressed="false">
+              <span class="note-front">
+                <span class="mono">02 / the room</span>
+                <span class="note-icon" aria-hidden="true">
+                  <svg viewBox="0 0 80 80"><path d="M12 20h56v48H12z" fill="#FFF9EE" stroke="#171512" stroke-width="2.5"/><path d="M12 34h56M12 50h56M26 34v34M54 20v14" stroke="#171512" stroke-width="2"/><circle cx="60" cy="27" r="4" fill="#FFC53D" stroke="#171512" stroke-width="1.5"/></svg>
+                </span>
+                <strong>the room that never changed</strong>
+                <span class="note-hint">flip me</span>
+              </span>
+              <span class="note-back">
+                <span class="mono">the story</span>
+                <p>Mohamed, Mazen, Hassan. Nearly every room in our dorm has changed roommates since that first year. Ours never has.</p>
+              </span>
+            </button>
+
+            <button class="thank-note note-three reveal" type="button" data-cursor="flip" aria-pressed="false">
+              <span class="note-front">
+                <span class="mono">03 / the ripple</span>
+                <span class="note-icon" aria-hidden="true">
+                  <svg viewBox="0 0 80 80"><rect x="14" y="22" width="52" height="36" rx="4" fill="#FFF9EE" stroke="#171512" stroke-width="2.5"/><path d="M14 26l26 20 26-20" fill="none" stroke="#171512" stroke-width="2.5" stroke-linejoin="round"/><path d="M54 64c8-6 12-12 12-18" fill="none" stroke="#2F5BFF" stroke-width="2.5" stroke-linecap="round"/></svg>
+                </span>
+                <strong>the cousin</strong>
+                <span class="note-hint">flip me</span>
+              </span>
+              <span class="note-back">
+                <span class="mono">the story</span>
+                <p>I told anyone who would listen about STEM schools. My cousin applied. He got in. From wherever I am, I can keep passing the map back.</p>
+              </span>
+            </button>
+
+            <button class="thank-note note-four reveal" type="button" data-cursor="flip" aria-pressed="false">
+              <span class="note-front">
+                <span class="mono">04 / the class</span>
+                <span class="note-icon" aria-hidden="true">
+                  <svg viewBox="0 0 80 80"><rect x="10" y="16" width="60" height="42" rx="3" fill="#171512"/><path d="M22 30h36M22 40h24" stroke="#FFF9EE" stroke-width="2.5" stroke-linecap="round"/><path d="M40 58v10M26 70h28" stroke="#171512" stroke-width="2.5" stroke-linecap="round"/><circle cx="58" cy="46" r="5" fill="#FFC53D"/></svg>
+                </span>
+                <strong>the tenth grade</strong>
+                <span class="note-hint">flip me</span>
+              </span>
+              <span class="note-back">
+                <span class="mono">the story</span>
+                <p>When our school lost a physics teacher, I taught the class. I stayed with every student who was stuck until it clicked. It cost me hours I didn't have.</p>
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <blockquote class="big-quote reveal">
+          <span class="quote-mark" aria-hidden="true">“</span>
+          The late nights I have never regretted were the ones I spent on <em>other people.</em>
+          <span class="quote-attrib">— from an essay about sleep, candy, and the people who made STEM home</span>
+        </blockquote>
+
+        <div class="dots-169 reveal" aria-label="30,000 applicants; one seat my family could afford">
+          <div class="dot-field" aria-hidden="true"></div>
+          <span class="one-dot" tabindex="0" aria-label="169th"><span class="one-dot-ring"></span><span class="one-dot-tip">169th</span></span>
+          <div class="dots-caption">
+            <span class="mono">30,000 applicants</span>
+            <span>one seat my family could afford</span>
+          </div>
+          <span class="dots-sticker">my counselor calls me the quietest-loudest person he knows. this site is the loud part.</span>
+        </div>
+      </div>
+      <svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0,44 C200,86 420,12 680,38 C940,64 1180,14 1440,46 L1440,90 L0,90 Z" fill="#101433"/></svg>
+    </section>
+
+    <!-- ─────────────────────────── WORDS ─────────────────────────── -->
+    <section class="section words" id="words">
+      <div class="words-stars" aria-hidden="true">
+        <svg viewBox="0 0 1440 800" preserveAspectRatio="none">
+          <g fill="#FFF9EE">
+            <circle cx="90" cy="100" r="2"/><circle cx="210" cy="230" r="1.5"/><circle cx="330" cy="90" r="2.5"/><circle cx="470" cy="180" r="1.5"/>
+            <circle cx="620" cy="80" r="2"/><circle cx="780" cy="160" r="1.5"/><circle cx="910" cy="70" r="2.5"/><circle cx="1060" cy="210" r="1.5"/>
+            <circle cx="1190" cy="110" r="2"/><circle cx="1340" cy="190" r="1.5"/><circle cx="120" cy="420" r="1.5"/><circle cx="270" cy="520" r="2"/>
+            <circle cx="430" cy="400" r="1.5"/><circle cx="590" cy="560" r="2.5"/><circle cx="760" cy="460" r="1.5"/><circle cx="900" cy="600" r="2"/>
+            <circle cx="1040" cy="430" r="1.5"/><circle cx="1210" cy="560" r="2.5"/><circle cx="1350" cy="470" r="1.5"/><circle cx="180" cy="700" r="2"/>
+            <circle cx="380" cy="740" r="1.5"/><circle cx="560" cy="680" r="2"/><circle cx="720" cy="760" r="1.5"/><circle cx="920" cy="700" r="2.5"/>
+            <circle cx="1100" cy="760" r="1.5"/><circle cx="1300" cy="690" r="2"/>
+          </g>
+          <g stroke="#FFF9EE" stroke-width="1" opacity=".28">
+            <path d="M90 100l120 130 120-140 140 90 150-100 160 80 130-90 150 140 130-100 150 80" fill="none"/>
+          </g>
+          <g class="twinkle" fill="#FFC53D">
+            <path d="M330 90l4 10 10 4-10 4-4 10-4-10-10-4 10-4z"/>
+            <path d="M910 70l3 8 8 3-8 3-3 8-3-8-8-3 8-3z"/>
+            <path d="M590 560l3 8 8 3-8 3-3 8-3-8-8-3 8-3z"/>
+            <path d="M1210 560l4 10 10 4-10 4-4 10-4-10-10-4 10-4z"/>
+          </g>
+          <path d="M1160 120a52 52 0 1 0 58 64 46 46 0 1 1-58-64z" fill="#FFC53D" opacity=".9"/>
+        </svg>
+      </div>
+      <div class="container words-inner">
+        <div class="section-head light">
+          <p class="eyebrow reveal"><span class="eyebrow-dot"></span>06 — the words</p>
+          <h2 class="display reveal">After the lab, I <em class="marker marker-marigold">write.</em></h2>
+          <p class="lede reveal">Poet since 2022. Head content writer for TEDx New Cairo STEM Youth. I wrote most of my school's website. Same muscle, different output.</p>
+        </div>
+
+        <div class="flashlight reveal" id="flashlight">
+          <div class="poem-wrap">
+            <p class="found-poem">
+              <span>I hate Greece</span>
+              <span>The sun is drowning</span>
+              <span>And the day finally cease</span>
+              <span>And as the light falls</span>
+              <span>The night takes from me another piece</span>
+              <span>But it's ok</span>
+              <span>What's better than getting close</span>
+              <span>To the end I always chose</span>
+              <span>and it's not... getting to Greece</span>
+              <span>It's ok</span>
+              <span>the day goes</span>
+              <span>And i don't care if i overdose</span>
+              <span>At least i enjoyed it</span>
+              <span>At least I'm at peace</span>
+            </p>
+            <p class="poem-credit">— Mina</p>
+          </div>
+          <div class="flashlight-mask" id="flashlight-mask" aria-hidden="true"></div>
+          <div class="flashlight-glow" id="flashlight-glow" aria-hidden="true"></div>
+          <div class="flashlight-hint" id="flashlight-hint">
+            <span>move your light</span>
+            <svg class="icon" aria-hidden="true"><use href="#i-moon"></use></svg>
+          </div>
+        </div>
+
+        <div class="words-counter-strip reveal">
+          <button class="word-counter-pill" id="word-counter-pill" type="button" data-cursor="explore">
+            <span class="mono">portfolio wordcraft:</span>
+            <strong id="word-counter-text">60+ published poems on HelloPoetry</strong>
+            <small>tap to cycle ↺</small>
+          </button>
+        </div>
+
+        <div class="words-tags reveal" aria-label="Writing credits">
+          <button class="word-tag" type="button" data-story="Poet since 2022: When science got too loud or labs ran past midnight, writing was how I sorted the static." data-cursor="story"><i>✦</i> poet since 2022</button>
+          <button class="word-tag" type="button" data-story="HelloPoetry: Published over 60 poems; writing about grief, sleep schedules, and silence." data-cursor="story"><i>✦</i> HelloPoetry</button>
+          <button class="word-tag" type="button" data-story="Foyle Young Poets: Entered international competition; pushed my meter past rhyme into cadence." data-cursor="story"><i>✦</i> Foyle Young Poets</button>
+          <button class="word-tag" type="button" data-story="TEDx New Cairo STEM Youth: Head of content writing; guided 14 youth speakers to turn technical projects into human stories." data-cursor="story"><i>✦</i> TEDx New Cairo STEM Youth</button>
+          <button class="word-tag" type="button" data-story="Cultura Magazine: Wrote cultural and science essays read across Cairo STEM campuses." data-cursor="story"><i>✦</i> Cultura</button>
+          <button class="word-tag" type="button" data-story="School Website: Drafted the public narrative and academic profiles for our new school." data-cursor="story"><i>✦</i> official school website</button>
+        </div>
+        <p class="words-foot mono" id="words-foot-text">the words on this site are mine too · click any badge to inspect</p>
+      </div>
+      <svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0,46 C210,86 420,10 680,38 C940,66 1170,12 1440,44 L1440,90 L0,90 Z" fill="#F6F0E4"/></svg>
+    </section>
+
+    <!-- ─────────────────────────── RECEIPT ─────────────────────────── -->
+    <section class="section receipt-section" id="receipt">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal"><span class="eyebrow-dot"></span>07 — the fine print</p>
+          <h2 class="display reveal">Everything that fits on a <em class="marker marker-marigold">receipt.</em></h2>
+          <p class="lede reveal">For the people who like numbers. And for the people who know the numbers are the least of it.</p>
+        </div>
+
+        <div class="receipt-wrap reveal">
+          <div class="receipt" id="receipt-card">
+            <div class="receipt-tear" aria-hidden="true"></div>
+            <div class="receipt-head">
+              <span class="receipt-logo">M.</span>
+              <p>MINA SAIED ATTIA RIZK</p>
+              <p class="mono">CAIRO, EGYPT · CLASS OF 2027</p>
+            </div>
+            <div class="receipt-rule" aria-hidden="true"></div>
+            <div class="receipt-lines">
+              <div class="receipt-line"><span>one seat my family could afford</span><i></i><span class="receipt-num" data-target="1">1</span></div>
+              <div class="receipt-line"><span>GPA, grades 10–11</span><i></i><span class="receipt-num" data-target="4.0" data-decimals="1">4.0</span></div>
+              <div class="receipt-line"><span>bridge rebuilds</span><i></i><span class="receipt-num" data-target="10">10</span></div>
+              <div class="receipt-line"><span>kg it held</span><i></i><span class="receipt-num" data-target="45">45</span></div>
+              <div class="receipt-line"><span>clubs founded</span><i></i><span class="receipt-num" data-target="9">9</span></div>
+              <div class="receipt-line"><span>languages</span><i></i><span class="receipt-num" data-target="4">4</span></div>
+              <div class="receipt-line"><span>hours of sleep on Thursday</span><i></i><span class="receipt-num" data-target="12">12</span></div>
+              <div class="receipt-line"><span>questions I couldn't put down</span><i></i><span class="receipt-num" data-target="1">1</span></div>
+              <div class="receipt-line"><span>weeks inside one question</span><i></i><span class="receipt-num" data-target="3.5" data-decimals="1">3.5</span></div>
+              <div class="receipt-line receipt-line-thanks"><span>thank-yous earned</span><i></i><span>still counting</span></div>
+            </div>
+            <div class="receipt-rule" aria-hidden="true"></div>
+            <div class="receipt-total">
+              <span>TOTAL</span><i></i><span>still becoming</span>
+            </div>
+            <div class="receipt-stamp">paid with thanks</div>
+            <div class="receipt-barcode" aria-hidden="true"></div>
+            <p class="receipt-code mono">MINA-2027-CAIRO · THANK YOU FOR READING</p>
+            <p class="receipt-secret">psst — try typing <strong>thank you</strong>.</p>
+          </div>
+          <span class="receipt-tape tape-a" aria-hidden="true"></span>
+          <span class="receipt-tape tape-b" aria-hidden="true"></span>
+        </div>
+        <p class="receipt-note reveal">also: two stages of UWC selection · EF SET C2 English · French B1 · Russian basic · poems on HelloPoetry · Purple Comet · Kangaroo · International Biology Bowl</p>
+      </div>
+      <svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0,40 C220,84 430,8 690,36 C950,64 1170,10 1440,46 L1440,90 L0,90 Z" fill="#FFC53D"/></svg>
+    </section>
+  </main>
+
+  <!-- ─────────────────────────── FOOTER ─────────────────────────── -->
+  <footer class="footer" id="contact">
+    <div class="footer-sun" aria-hidden="true"></div>
+    <div class="footer-dots" aria-hidden="true"></div>
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <p class="eyebrow reveal"><span class="eyebrow-dot"></span>08 — say hi</p>
+        <h2 class="footer-title reveal">Ask me a <em>question.</em></h2>
+        <p class="footer-lede reveal">I'll probably follow it too far.</p>
+      </div>
+      <div class="footer-actions reveal">
+        <a class="email-link" href="mailto:minasaied2024@gmail.com" data-cursor="say hi">minasaied2024@gmail.com</a>
+        <div class="footer-buttons">
+          <button class="btn btn-ink magnetic" id="copy-email" type="button" data-cursor="copy">
+            copy email
+            <svg class="icon" aria-hidden="true"><use href="#i-copy"></use></svg>
+          </button>
+          <a class="btn btn-ghost magnetic" href="#top" data-cursor="up">back to the top
+            <svg class="icon" aria-hidden="true"><use href="#i-arrow-up"></use></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-meta reveal">
+        <span>Cairo, Egypt · <span id="cairo-time">--:--</span></span>
+        <span>New Cairo STEM School · Class of 2027</span>
+        <span>This site is my answer to Colorado College's Block Plan supplement.</span>
+        <span>no cookies. only candy.</span>
+      </div>
+      <div class="footer-bottom">
+        <span class="mono">made with one question at a time</span>
+        <span class="footer-mark">M<span>.</span></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ─────────────────────────── ANSWER DIALOG ─────────────────────────── -->
+  <dialog class="answer-dialog" id="answer-dialog" aria-labelledby="answer-title">
+    <div class="dialog-paper">
+      <button class="dialog-close" id="dialog-close" type="button" aria-label="Close the answer">close <span>×</span></button>
+      <p class="dialog-kicker">Colorado College · Block Plan supplement · the short answer</p>
+      <h2 id="answer-title">One question,<br>all of me.</h2>
+      <p class="dialog-lede">The short answer. The website is the long one.</p>
+      <div class="dialog-rule" aria-hidden="true"></div>
+      <p>Last year, in eleventh-grade biology, the class was learning how a nerve fires. I asked the opposite question: with so much activity in the body, how does the brain know what to ignore?</p>
+      <p>I couldn't put it down. For three and a half weeks, I lived inside it — reading until I understood the noise, building a closed-loop core-conductor model of ephaptic crosstalk, testing how space and time sum the interference when a nerve is compressed. I rebuilt the model more times than I can count. Everything else went quiet.</p>
+      <p>The result was a sole-authored paper now in second-round review at the <em>Journal of Computational Neuroscience</em>. What stayed with me wasn't the result. It was the quiet: one question, all of me, for as long as it took. That is the luxury I want a Block Plan for.</p>
+      <div class="dialog-outcome">
+        <span class="mono">how it turned out</span>
+        <span>Sole author · second-round peer review · Springer Nature</span>
+      </div>
+      <div class="dialog-bottom-actions">
+        <button class="btn btn-small btn-ink" id="dialog-copy-btn" type="button" data-cursor="copy">copy essay text 📋</button>
+      </div>
+      <p class="dialog-sign">— Mina</p>
+      <div class="dialog-stamp" aria-hidden="true">in review</div>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="candy-rain" id="candy-rain" aria-hidden="true"></div>
+
+  <!-- ─────────────────────────── SVG SPRITE ─────────────────────────── -->
+  <svg class="svg-sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-arrow-down" viewBox="0 0 24 24"><path d="M12 4v15M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 20V5M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4z" fill="currentColor"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2l2.9 6.9L22 12l-7.1 3.1L12 22l-2.9-6.9L2 12l7.1-3.1z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-neuron" viewBox="0 0 48 48"><circle cx="24" cy="24" r="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M24 19V8M24 29v11M19 24H8M29 24h11M20.5 20.5L12 12M27.5 20.5L36 12M20.5 27.5L12 36M27.5 27.5L36 36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="8" cy="8" r="2.5" fill="currentColor"/><circle cx="40" cy="8" r="2.5" fill="currentColor"/><circle cx="8" cy="40" r="2.5" fill="currentColor"/><circle cx="40" cy="40" r="2.5" fill="currentColor"/></symbol>
+    <symbol id="i-candy" viewBox="0 0 48 48"><path d="M12 24l-7-7v14zM36 24l7-7v14z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><ellipse cx="24" cy="24" rx="13" ry="10" fill="none" stroke="currentColor" stroke-width="2"/><path d="M18 18c4 4 8 8 12 12M30 18c-4 4-8 8-12 12" stroke="currentColor" stroke-width="1.6" opacity=".6"/></symbol>
+    <symbol id="i-bridge" viewBox="0 0 48 48"><path d="M4 32h40M8 32V22M40 32V22M8 22c8-10 24-10 32 0M8 32l8-10 8 10 8-10 8 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 38c6-3 10 3 16 0s10 3 16 0 6 0 8 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 48 48"><path d="M34 34A15 15 0 1 1 22 8a13 13 0 0 0 12 26z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M36 10l1.5 4.5L42 16l-4.5 1.5L36 22l-1.5-4.5L30 16l4.5-1.5z" fill="currentColor"/></symbol>
+    <symbol id="i-pen" viewBox="0 0 48 48"><path d="M10 38l4-13 18-18 9 9-18 18z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M10 38l4-13 9 9z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M32 7l9 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-banana" viewBox="0 0 48 48"><path d="M12 10c-4 13 2 27 15 30 6 1 10-3 8-8-2-4-7-5-9-11-2-5 0-9-2-12z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M12 10c-2-3-6-4-8-2M34 34c4 0 7 2 7 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-lens" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15.5 15.5L21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-sound-on" viewBox="0 0 24 24"><path d="M4 9h4l5-4v14l-5-4H4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M16 8c2 2 2 6 0 8M19 5c4 4 4 10 0 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-sound-off" viewBox="0 0 24 24"><path d="M4 9h4l5-4v14l-5-4H4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M17 9l4 6M21 9l-4 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M20 4C10 4 4 8 4 15c0 3 2 5 5 5 7 0 11-6 11-16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M4 20c3-6 7-9 12-12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-atom" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2" fill="currentColor"/><ellipse cx="12" cy="12" rx="9" ry="4" fill="none" stroke="currentColor" stroke-width="1.6" transform="rotate(30 12 12)"/><ellipse cx="12" cy="12" rx="9" ry="4" fill="none" stroke="currentColor" stroke-width="1.6" transform="rotate(-30 12 12)"/></symbol>
+    <symbol id="i-pi" viewBox="0 0 24 24"><path d="M5 8h14M9 8v11M15 8v11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5h6a2 2 0 0 1 2 2v13a2 2 0 0 0-2-2H4zM20 5h-6a2 2 0 0 0-2 2v13a2 2 0 0 1 2-2h6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 4h16v12H9l-5 4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M4 12l5 5L20 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </svg>
+
+  <script src="assets/vendor/gsap.min.js"></script>
+  <script src="assets/vendor/ScrollTrigger.min.js"></script>
+  <script src="assets/vendor/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
